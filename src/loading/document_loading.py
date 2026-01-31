@@ -6,6 +6,9 @@ from langchain_community.document_loaders import (
     TextLoader
 )
 
+import pandas as pd
+data = pd.read_csv("data/web_data.csv")
+
 
 bs4_strainer_testing = bs4.SoupStrainer(class_=("post-title", "post-header", "post-content"))
 
@@ -16,9 +19,9 @@ class Loader:
         This initializes the loader 
 
         Args:
-            source list(str): source of the document
-            loader_type (str): type of the loader, can be "web", "pdf", "txt"
-            bs4_strainer (bs4.SoupStrainer): strainer for web loader
+            source: list(str) | source of the document
+            loader_type: (str) | type of the loader, can be "web", "pdf", "txt"
+            bs4_strainer: (bs4.SoupStrainer) | strainer for web loader
 
         Returns:
             Loader datatype 
@@ -60,7 +63,7 @@ class Loader:
         Args: 
             None
         Returns: 
-            documents (list): list of documents
+            documents: (list) | list of documents
         """
         documents = []
 

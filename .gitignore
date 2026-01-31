@@ -1,4 +1,4 @@
 venv
 .env
-documents/
+**/documents/**
 __pycache__/
