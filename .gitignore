@@ -1,2 +1,5 @@
 venv
 .env
+**/documents/**
+__pycache__/
+.vscode/
