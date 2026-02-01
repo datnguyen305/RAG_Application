@@ -6,9 +6,6 @@ from langchain_community.document_loaders import (
     TextLoader
 )
 
-import pandas as pd
-data = pd.read_csv("data/web_data.csv")
-
 
 bs4_strainer_testing = bs4.SoupStrainer(class_=("post-title", "post-header", "post-content"))
 
