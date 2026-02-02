@@ -19,3 +19,5 @@ class FaissVectorStore:
         ids = self.vector_store.add_documents(documents=all_splits)
         return ids
     
+    def similarity_search(self, query: str, k: int = 4):
+        return self.vector_store.similarity_search(query, k=k)
