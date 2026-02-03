@@ -3,3 +3,4 @@ venv
 **/documents/**
 __pycache__/
 .vscode/
+data

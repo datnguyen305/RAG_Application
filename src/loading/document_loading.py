@@ -69,3 +69,4 @@ class Loader:
             documents.extend(loader.load())
 
         return documents
+    
