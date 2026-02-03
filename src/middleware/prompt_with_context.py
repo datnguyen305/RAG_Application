@@ -12,7 +12,7 @@ def make_prompt_with_context(vector_store):
         docs_content = "\n\n".join(doc.page_content for doc in retrieved_docs)
 
         system_message = (
-            "You are a helpful assistant. Use the following context in your response:"
+            "You are a helpful assistant. If you can't retrieve the info inside the database just say 'I don't know'. Use the following context in your response:"
             f"\n\n{docs_content}"
         )
 
