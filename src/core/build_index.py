@@ -12,6 +12,11 @@ URLS = [
     if os.path.isfile(os.path.join(DATA_DIR, f))
 ]
 
+additional_url = []
+
+if additional_url:
+    URLS.extend(additional_url)
+
 def build_index(URLS: list[str]):
     print("Building FAISS index...")
     loader = Loader(source=URLS)
