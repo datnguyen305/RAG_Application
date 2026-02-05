@@ -1,4 +1,4 @@
-# Retrieval - Augmentation - Generate System that mimics Google's NotebookLM linguistic search engine.
+# document_retrieval
 
 ### Description: This system utilize LangChain's AI Agents framework to do local domain specialized document retrieval. Especially fits for small - medium domain centralized coporation. Learners can folk this repo for educational purposes. 
 
